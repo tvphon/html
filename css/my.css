@@ -1,0 +1,18 @@
+
+#a1{
+    text-decoration-line: none;
+}
+input{
+    background-color: antiquewhite;
+}
+label{
+    color: aqua;
+}
+.tc-red{
+    color: red;
+    font-style: italic;
+}
+.bg-blue{
+    background-color: blue;
+    font-style: italic;
+}

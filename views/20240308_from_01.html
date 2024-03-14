@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그처음</title>
+    <style>
+        @import url(../css/my.css);
+        span {
+            color: violet ;
+        }
+    </style>
+    <!--    
+   <link href="../css/my.css" rel="stylesheet" type="text/css">
+    -->
+</head>
+
+<body>
+    <a href="#n5v" id="a1" class="aclass1">내부링크테스트</a>
+    <h1 class="tc-red bg-blue">input type 종류별</h1>
+    <form method="get" action="#">
+        <div>
+            <label  for="n1text">text - value=사용자입력</label>
+            <input  type="text" name="n1" id="n1text" class="input1 text1">
+        </div>
+        <div>
+            <span>password</span>
+            <input type="password" name="n2">
+        </div>
+        <div>
+            <span>hidden</span>
+            <input type="hidden" name="n3" value="v3필수">
+        </div>
+        <div>
+            <span>button - 사용자입력데이터전송용도가 아니므로 name속성쓰지마세요!!!</span>
+            <input type="button" value="버튼1">
+        </div>
+        <div>
+            <span>checkbox - name속성값으로 그룹핑이됨 - 반드시 value필요 String[] n5Arr = request.getParameterValues("n5");</span>
+            <br>
+            <label for="n5v">배구 : </label><input type="checkbox" name="n5" value="v" id="n5v">
+            <label for="n5b">야구 : </label><input type="checkbox" name="n5" value="b" id="n5b">
+            <label for="n5s">축구 : </label><input type="checkbox" name="n5" value="s" id="n5s">
+            <br>
+            <span>Java : </span><input type="checkbox" name="n10" value="j">
+            <span>HTML : </span><input type="checkbox" name="n10" value="h">
+            <span>JDBC : </span><input type="checkbox" name="n10" value="d">
+        </div>
+        <div>
+            <span>file</span>
+            <input type="file" name="n6">
+        </div>
+        <div>
+            <span>radio - name속성값으로 그룹핑이됨 - 반드시 value필요</span>
+            <br>
+            <span>Java : </span><input type="radio" name="n7" value="j" checked="checked">
+            <span>Oracle : </span><input type="radio" name="n7" value="o">
+            <br>
+            <span>HTML : </span><input type="radio" name="n11" value="h">
+            <span>CSS : </span><input type="radio" name="n11" value="c">
+            <span>JS : </span><input type="radio" name="n11" value="s">
+        </div>
+        <div>
+            <span>submit</span>
+            <input type="submit" name="n8">
+        </div>
+        <div>
+            <span>reset</span>
+            <input type="reset" name="n9">
+        </div>
+
+    </form>
+    <h1>web31copt dept insert</h1>
+    <form method="post" action="http://127.0.0.1:8080/web31copy/dept/insert" autocomplete="off" target="_blank">
+        <fieldset>
+            <legend>부서추가</legend>
+            <div>
+                <span>deptno : </span>
+                <input type="text" name="deptno" placeholder="번호">
+            </div>
+            <div>
+                <span>dname : </span>
+                <input type="text" name="dname" placeholder="이름">
+            </div>
+            <div>
+                <span>loc : </span>
+                <input type="text" name="loc" placeholder="지역">
+            </div>
+        </fieldset>
+        <div>
+            <input type="submit" value="제출말고다른이름">
+            <input type="reset" value="초기화말고다른이름">
+        </div>
+    </form>
+    <form method="post" action="http://127.0.0.1:8080/web31copy/dept/insert" autocomplete="off" target="_blank">
+        <input type="text" name="deptno" value="번호">
+        <input type="text" name="dname" value="이름">
+        <input type="text" name="loc" value="지역">
+        <input type="submit" value="제출말고다른이름">
+        <input type="reset" value="초기화말고다른이름">
+    </form>
+</body>
+
+</html>
