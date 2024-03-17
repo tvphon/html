@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="/css/js.css">
+</head>
+
+<body>
+    <div class="web-header">
+        <h1 id="question">4의 배수일까 아닐까</h1>
+        <h2 id="result"></h2>
+    </div>
+    <div class="Web-scr">
+        <script>
+            var a1 = prompt("숫자를 입력하시오.");
+            if (a1 % 4 === 0) {
+                //document.write(a1 + "는 4의 배수입니다.")
+                document.getElementById("result").innerHTML = a1+ "는 4의 배수입니다.";
+            } else {
+                (a1 % 4 !== 0)
+                // document.write(a1 + "는 4의 배수가 아닙니다.")
+                document.getElementById("result").innerHTML = a1+ "는 4의 배수 아닙니다.";
+            }
+            console.log(document.getElementById("question").innerHTML);
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 01</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <h1 id="id2">연산자 </h1>
+    <h1 class="c2">제어문 </h1>
+    <script>
+        var a1 = false; //  15
+        var a2 = 0;     // "15"
+        console.log((a1 == a2) ? "==같다" : "==다르다");
+        console.log((a1 === a2) ? "===같다" : "===다르다");
+
+        var arr = ["apple", "banana"];
+        for (var i = 0; i < arr.length; i++) {
+            console.log(arr[i]);
+        }
+        for (var i in arr) {
+            console.log(arr[i]);
+        }
+
+        var obj = {
+            k1 : "seoul"
+            , k2 : "daegeon"
+            , key : "이거이거"
+        };
+        console.log(obj.key);
+        console.log(obj["key"]);
+        console.log(obj["k1"]);
+       
+       
+        for (var key in obj) {
+            console.log(key);
+            console.log(typeof(key));
+            // var key = "k1";
+            // var key = "k2";
+            console.log(obj[key]);
+            console.log(obj["k1"]);
+        }
+
+
+
+
+
+        var arr = ["apple", "banana", function(){ console.log("배열의2번index에함수입니다.")}];
+        for (var i in arr) {
+            if(typeof(arr[i]) == "function") {
+                arr[i]();
+            } else {
+                console.log(arr[i]);
+            }
+        }
+
+        arr[10] = "10번째방에 값넣기";
+        for (var i in arr) {
+            console.log(i);
+            console.log(arr[i]);
+        }
+        for (var i = 0; i < arr.length+20; i++) {
+            console.log(arr[i]);
+        }
+
+        var arr = new Array(2);     // 2개방 즉 index 0.1
+        arr[0] = 100;
+        arr.push(3);    //맨뒤에 추가 // index 2
+        arr.push("apple");
+        arr.push("2번장에도 값들어가나?");
+        arr[10] = "10번방 []으로도 들어가나?";
+        for (var i in arr) {
+            console.log(i+":"+arr[i]);
+        }
+
+       
+
+        
+
+    </script>
+</body>
+
+</html>

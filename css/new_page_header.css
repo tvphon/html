@@ -1,0 +1,60 @@
+header nav>ul {
+    overflow: hidden;
+}
+
+header nav>ul>li {
+    float: left;
+}
+
+header nav,
+header div.logo {
+    clear: both;
+}
+
+header {
+    position: relative;
+    height: 150px;
+}
+
+header .tnb {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+header .bnb {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+header div.logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+header a {
+    display: inline-block;
+    border: 1px solid black;
+}
+
+header li:first-child > a {
+    border-radius: 15px 0 0 15px;
+}
+header li:last-child > a {
+    border-radius: 0 15px 15px 0;
+}
+
+header .tnb a {
+    padding: 5px 10px;
+}
+
+header .bnb a {
+    padding: 10px 15px;
+}
+
+header a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
